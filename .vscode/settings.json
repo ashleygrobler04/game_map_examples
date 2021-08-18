@@ -1,0 +1,27 @@
+{
+  "python.sortImports.path": "${workspaceFolder}/env/scripts/isort",
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "-l",
+    "79"
+  ],
+  "[python]": {
+    "gitlens.codeLens.symbolScopes": [
+      "!Module"
+    ],
+    "editor.wordBasedSuggestions": false,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "editor.formatOnSave": true
+  },
+  "cSpell.words": [
+    "audiogames",
+    "exc",
+    "pytest",
+    "subclassing"
+  ],
+  "accessibleCodeRuler.languageMaximumLineLength": {
+    "python": 88
+  }
+}
