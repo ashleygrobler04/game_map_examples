@@ -67,3 +67,11 @@ If you create a base `TileType` class to work from, you can use that as your typ
 * Generics might be confusing.
 * Involves a bit more code.
 * Probably requires a bit more memory to hold instances. Of course you should be reusing instances, so there you go.
+
+## Boxes
+
+### Description
+
+Because creating a 100x100 map with tiles would be tedious, error prone, and maddeningly long-winded, we instead create tiles using boxes. These are a rectangle of tiles, where we say "Let every tile from (10, 10) to (50, 50) be grass".
+
+There is an example and full test coverage of that as well in `box.py`.
