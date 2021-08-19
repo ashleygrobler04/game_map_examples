@@ -39,6 +39,8 @@ def test_init() -> None:
     assert map.size_x == 20
     assert map.size_y == 10
     assert map.tiles[0][0] is dirt
+    assert len(map.tiles) == map.size_x
+    assert len(map.tiles[0]) == map.size_y
     map = GameMap(20, 10, sand)
     assert map.size_x == 20
     assert map.size_y == 10

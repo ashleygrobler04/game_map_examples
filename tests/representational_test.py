@@ -11,6 +11,8 @@ def test_init() -> None:
     assert map.size_x == 20
     assert map.size_y == 10
     assert map.get_tile(0, 0) == tile_types[0]
+    assert len(map.tiles) == map.size_x
+    assert len(map.tiles[0]) == map.size_y
     map = GameMap(20, 10, tile_types, default_type_index=2)
     assert map.size_x == 20
     assert map.size_y == 10
